@@ -15,6 +15,10 @@ import androidx.fragment.app.Fragment
 
 class Phase2FragmentA : Fragment() {
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    /**
+     * [Old Method]
+     * Create a ComposeView in a Fragment
+     */
     return ComposeView(requireContext()).apply {
       setViewCompositionStrategy(
         ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed

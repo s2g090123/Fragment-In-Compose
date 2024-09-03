@@ -13,12 +13,16 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.compose.content
 
 class Phase2FragmentB : Fragment() {
+  /**
+   * [New Method]
+   * Simplify the creation of ComposeView using content {}.
+   */
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View = content {
     Box(
       modifier = Modifier.fillMaxSize(),
       contentAlignment = Alignment.Center,
     ) {
-      Text(text = "A")
+      Text(text = "B")
     }
   }
 }

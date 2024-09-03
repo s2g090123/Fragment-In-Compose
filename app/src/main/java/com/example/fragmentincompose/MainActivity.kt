@@ -23,13 +23,16 @@ class MainActivity : FragmentActivity() {
     setContent {
       FragmentInComposeTheme {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+          /**
+           * Display a Fragment in Compose using AndroidFragment
+           */
           AndroidFragment(
             modifier = Modifier.padding(innerPadding),
             clazz = Phase3Fragment::class.java,
             fragmentState = rememberFragmentState(),
             arguments = Bundle.EMPTY,
             onUpdate = { fragment ->
-              // onResume
+              // Executed after onResume, and you can initialize the content of the fragment here
             }
           )
         }

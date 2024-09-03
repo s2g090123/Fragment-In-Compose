@@ -13,15 +13,25 @@
       android:theme="@style/Theme.FragmentInCompose"
       tools:targetApi="31">
     <activity
-        android:name=".MainActivity"
+        android:name=".phase4.Phase4Activity"
         android:exported="true"
-        android:label="@string/app_name"
-        android:theme="@style/Theme.FragmentInCompose">
+        android:theme="@style/Theme.FragmentInCompose.Phase4">
+    </activity>
+    <activity
+        android:name=".phase4.Phase4ComposeActivity"
+        android:exported="true"
+        android:theme="@style/Theme.FragmentInCompose.Phase4">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
+    </activity>
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.FragmentInCompose">
     </activity>
   </application>
 

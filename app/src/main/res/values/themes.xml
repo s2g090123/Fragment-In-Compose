@@ -2,4 +2,5 @@
 <resources>
 
   <style name="Theme.FragmentInCompose" parent="android:Theme.Material.Light.NoActionBar" />
+  <style name="Theme.FragmentInCompose.Phase4" parent="Theme.AppCompat.Light.NoActionBar" />
 </resources>

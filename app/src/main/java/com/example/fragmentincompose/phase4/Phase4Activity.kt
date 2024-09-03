@@ -21,6 +21,9 @@ class Phase4Activity : AppCompatActivity() {
     enableEdgeToEdge()
     setContentView(R.layout.activity_phase4)
 
+    /**
+     * Navigation in Fragment
+     */
     val hostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
     hostFragment.navController.apply {
       graph = createGraph(startDestination = "$A") {

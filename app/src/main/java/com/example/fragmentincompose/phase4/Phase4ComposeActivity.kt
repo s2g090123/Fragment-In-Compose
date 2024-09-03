@@ -70,6 +70,7 @@ inline fun <reified T : NavigationFragment> NavigationFragment(
     fragmentState = fragmentState,
     arguments = arguments,
     onUpdate = { fragment ->
+      // Set the Navigator for the Fragment
       fragment.setNavigator { route ->
         navController.navigate("$route")
       }
